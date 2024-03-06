@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_-gCJINuAEe662t4FehUsEw" targetNamespace="http://tns.tibco.com/bw/composite/C_ESB_ANSG_AGL" name="C_ESB_ANSG_AGL" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_H_cp4NuBEe6KmoHnmatHQg" name="resource" promote="ComponentResource/resource">
+    <sca:interface.wsdl xmi:id="_H_gUQNuBEe6KmoHnmatHQg" interface="http://xmlns.example.com/20240306151652PLT#wsdl.interface(resource)" scaext:wsdlLocation="../Processes/c_esb_ansg_agl/Resource.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_H_lz0NuBEe6KmoHnmatHQg" name="RestService" path="/resource" docBasePath="http://localhost:7777/C_ESB_ANSG_AGL" docResourcePath="Resource" basePath="/" connector="c_esb_ansg_agl.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/c_esb_ansg_agl.Resource-Resource.json">
+      <operation xmi:id="_H_qsUNuBEe6KmoHnmatHQg" operationName="post" nickname="post-resource" httpMethod="POST" notes="postResource" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_H_qsUduBEe6KmoHnmatHQg" operationName="get" nickname="get-resource" httpMethod="GET" notes="getResource" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_H_qsUtuBEe6KmoHnmatHQg" operationName="put" nickname="put-resource" httpMethod="PUT" notes="putResource" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_H_qsU9uBEe6KmoHnmatHQg" operationName="delete" nickname="delete-resource" httpMethod="DELETE" notes="deleteResource" responseStyle="element" outputPartName="msg">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_H_qsVNuBEe6KmoHnmatHQg" operationName="patch" nickname="patch-resource" httpMethod="PATCH" notes="patchResource" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_IAnuk9uBEe6KmoHnmatHQg"/>
+      <advancedConfig xmi:id="_H_peMNuBEe6KmoHnmatHQg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_H_qsVduBEe6KmoHnmatHQg" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_-rubwNuAEe662t4FehUsEw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-r2XkNuAEe662t4FehUsEw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-r3lsNuAEe662t4FehUsEw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-r4z0NuAEe662t4FehUsEw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-r5a4NuAEe662t4FehUsEw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-r6pANuAEe662t4FehUsEw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-r7QENuAEe662t4FehUsEw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-r8eMNuAEe662t4FehUsEw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-r9FQNuAEe662t4FehUsEw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_-r9sUNuAEe662t4FehUsEw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_H_VVINuBEe6KmoHnmatHQg" name="ComponentResource" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_H_V8MNuBEe6KmoHnmatHQg" processName="c_esb_ansg_agl.Resource"/>
+    <sca:service xmi:id="_H_aNoNuBEe6KmoHnmatHQg" name="resource">
+      <sca:interface.wsdl xmi:id="_H_a0sNuBEe6KmoHnmatHQg" interface="http://xmlns.example.com/20240306151652PLT#wsdl.interface(resource)" scaext:wsdlLocation="../Processes/c_esb_ansg_agl/Resource.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
